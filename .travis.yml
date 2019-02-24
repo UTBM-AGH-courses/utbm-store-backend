@@ -1,3 +1,5 @@
 language: ruby
 rvm:
  - 2.5.1
+ notifications:
+  slack: lpa2:fvEgEB9rCOa72TQS9HE9lAER
