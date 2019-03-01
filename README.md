@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vareversat/UTBM-Web-Project.svg?branch=master)](https://travis-ci.org/vareversat/UTBM-Web-Project)
+
 # README
 
 This README would normally document whatever steps are necessary to get the
