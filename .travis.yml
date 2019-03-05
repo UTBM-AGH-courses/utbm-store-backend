@@ -2,8 +2,15 @@ language: ruby
 services:
   postgresql 
 rvm:
-- 2.5.3
+  - 2.5.3
 before_script:
   - cp config/database.travis.yml config/database.yml
   - psql -c 'create database db_test;' -U postgres
   - psql -c 'create database db_development;' -U postgres
+deploy:
+  provider: heroku
+  api_key:
+    secure: c2a7b660-4a34-4b96-9d43-90f2ec59e619
+  app: utbm-web-project
+  on:
+    repo: vareversat/UTBM-Web-Project
