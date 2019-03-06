@@ -30,3 +30,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+#Docker
+Dockerfile
+docker-compose.yml
+entrypoint.sh
+init.sh
