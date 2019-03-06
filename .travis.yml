@@ -4,6 +4,7 @@ services:
 rvm:
   - 2.5.3
 before_script:
+  - gem install bundler
   - cp config/database.travis.yml config/database.yml
   - psql -c 'create database db_test;' -U postgres
   - psql -c 'create database db_development;' -U postgres
@@ -14,3 +15,4 @@ deploy:
   app: utbm-web-project
   on:
     repo: vareversat/UTBM-Web-Project
+  skip_cleanup: true
