@@ -10,7 +10,7 @@ before_script:
 deploy:
   provider: heroku
   api_key:
-    secure: F6XbztaPvIfu+d2ktr+NvLFThsa3r1x6wZLcxd1ETHuWUjoMCMfnvIbfHbR2l/C23jlPluooiP1O8IpWRsuNb+7HEz80iT0O+ZT/93pODSPE7Xuin7XinGnTEr8FlMuT9FFUype9J/MRStRS3H0sRNjPLBHmzQHiErJhNd9cT5iT00xUxA3+QloioHGb2+E6Ap+td2OnG466UHgp3KcbxdofVRHjopCLAfhbLc5axGiGklCGZaOOza+QbWjzUwk5p99JcrwV047iBVb2c7int+kxdV69CfI3DlsUDMzN72TVJFUxqRFSHpQLDAZxpqo+4WHb9mXSZuNhVzprbPrv+Gt1jM81tBY+nc65DjG2alwSWqLRDXzajNC9qI4W848WwmIuXASGX53VCqu5+LCfktZIfHDNrO8jTc+oAlr6wCSfLLdF4Wh7AP4G0GrgXqmRNGnIsxSP+0bhbI1OrxRTumCmf8GlyBxRlYSbtJrONrEdL6hRsyfXyHDmYrDFiD1gKteqlrGpJ6MY5W79BerVH42BhCrmB7vnZfHh5C5X9+OFnJy7hMXkE7VBQnqkXuCNafcFGRFJNsh2sNEd8DNbxfuxvnd8uALwNALISX5ls+gka6ERuqgqUyFqo4DKmLuA+9F3QeIc4c7vwKJFRJHgJAf7VLCTLNFvcKHbrwfGklA=
+    secure: 08454402-33a8-474c-9f55-acf568e91e49
   app: utbm-web-project
   on:
     repo: vareversat/UTBM-Web-Project
