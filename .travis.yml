@@ -14,3 +14,4 @@ deploy:
   on:
     repo: vareversat/UTBM-Web-Project
   skip_cleanup: true
+  run: "rails db:migrate"
