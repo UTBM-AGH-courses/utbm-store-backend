@@ -32,8 +32,4 @@
 /config/master.key
 
 #Docker
-Dockerfile
-docker-compose.yml
-entrypoint.sh
-init.sh
 clean_docker.sh
