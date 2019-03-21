@@ -3,8 +3,8 @@ services:
   db:
     image: postgres
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
-    container_name: ruby_utbm_pg
+      - postgres:/var/lib/postgresql/data
+    container_name: postgresql
   ruby:
     build: .
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
@@ -14,4 +14,7 @@ services:
       - "3000:3000"
     depends_on:
       - db
-    container_name: ruby_utbm_ruby
+    container_name: ruby
+volumes:
+  postgres:
+    driver: local
