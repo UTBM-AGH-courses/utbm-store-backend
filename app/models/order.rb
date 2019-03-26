@@ -1,3 +1,3 @@
 class Order < ApplicationRecord
-    has_many :products, through: :orderlines
+    has_many :products, dependent: :delete_all, through: :orderlines
 end
