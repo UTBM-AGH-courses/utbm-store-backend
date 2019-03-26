@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-- 2.5.5
+- 2.5.3
 before_script: 
 - cp config/database.travis.yml config/database.yml
 - bundle exec rake db:create
