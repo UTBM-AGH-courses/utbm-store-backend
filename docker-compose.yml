@@ -1,24 +1,31 @@
 version: '3'
 services:
   db:
-    image: postgres
+    networks: 
+      - net_app
+    image: postgres:latest
     volumes:
       - /tmp/db:/var/lib/postgresql/data
     container_name: postgresql
   frontend:
-    build: ../UTBM-Web-Project-frontend/
+    networks: 
+      - net_app
+    image: img_angular:latest
     volumes:
       - ../UTBM-Web-Project-frontend/:/myapp
     ports:
       - "4200:4200"
     container_name: angular
   ruby:
-    build: .
+    networks: 
+      - net_app
+    image: img_ruby:latest
     command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -p 3000 -b '0.0.0.0'"
     volumes:
       - .:/myapp
     ports:
       - "3000:3000"
-    depends_on:
-      - db
     container_name: ruby
+networks:
+  net_app:
+      driver: bridge
