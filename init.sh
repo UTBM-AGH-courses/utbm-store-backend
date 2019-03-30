@@ -2,4 +2,4 @@
 echo "-- SHUTTING DOWN THE APP --" ;
 docker-compose down &&
 echo "-- BUILDING AND LAUNCHING THE APP --" ;
-docker-compose up --build
+sudo docker-compose up --build
