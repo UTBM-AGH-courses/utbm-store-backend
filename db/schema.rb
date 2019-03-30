@@ -12,9 +12,12 @@
 
 ActiveRecord::Schema.define(version: 2019_03_22_094634) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "orderlines", force: :cascade do |t|
-    t.integer "order_id"
-    t.integer "product_id"
+    t.bigint "order_id"
+    t.bigint "product_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["order_id"], name: "index_orderlines_on_order_id"
@@ -46,4 +49,6 @@ ActiveRecord::Schema.define(version: 2019_03_22_094634) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "orderlines", "orders"
+  add_foreign_key "orderlines", "products"
 end

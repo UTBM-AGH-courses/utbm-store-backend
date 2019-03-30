@@ -1,4 +1,5 @@
 language: ruby
+services: postgresql
 rvm:
 - 2.5.3
 before_script: 
