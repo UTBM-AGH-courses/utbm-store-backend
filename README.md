@@ -1,27 +1,13 @@
 [![Build Status](https://travis-ci.org/vareversat/UTBM-Web-Project.svg?branch=master)](https://travis-ci.org/vareversat/UTBM-Web-Project)
 [![Maintainability](https://api.codeclimate.com/v1/badges/72c0257466f6f4aa1f56/maintainability)](https://codeclimate.com/github/vareversat/UTBM-Web-Project/maintainability)
 
-# README
+# Pizza store developped in Ruby on Rails (banckend side)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+UTBM project (UV LP71) to develop a small app 
 
-Things you may want to cover:
+# Build and launch
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```shell
+cd UTBM-Web-Project/
+./init.sh
+```
