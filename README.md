@@ -3,7 +3,8 @@
 
 # Pizza store developped in Ruby on Rails (banckend side)
 
-UTBM project (UV LP71) to develop a small app 
+UTBM project (UV LP71) to develop a small app.
+[Frontend side](https://github.com/vareversat/UTBM-Web-Project-frontend)
 
 # Build and launch
 
