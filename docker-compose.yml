@@ -7,15 +7,6 @@ services:
     volumes:
       - /tmp/db:/var/lib/postgresql/data
     container_name: postgresql
-  frontend:
-    networks: 
-      - net_app
-    image: img_angular:latest
-    volumes:
-      - ../UTBM-Web-Project-frontend/:/myapp
-    ports:
-      - "4200:4200"
-    container_name: angular
   ruby:
     networks: 
       - net_app
