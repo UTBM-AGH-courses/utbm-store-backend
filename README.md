@@ -6,10 +6,15 @@
 UTBM project (UV LP71).
 [Frontend side](https://github.com/vareversat/UTBM-Web-Project-frontend)
 
+# Prerequisites
+
+* [Docker](https://docs.docker.com/install/)
+* [Docker compose](https://docs.docker.com/compose/install/)
+
 # Build and launch
 
 ```shell
-cd UTBM-Web-Project/
-./init.sh
+$ cd UTBM-Web-Project/
+$ ./init.sh
 ```
-Then, navigate to `http://localhost:3000/`
+Then, go to `http://localhost:3000/` on your web browser
