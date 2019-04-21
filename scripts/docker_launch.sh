@@ -1,3 +1,4 @@
+#!/bin/bash
 
 echo "-- SHUTTING DOWN THE APP --" ;
 docker-compose down &&
