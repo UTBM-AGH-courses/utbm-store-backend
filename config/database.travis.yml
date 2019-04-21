@@ -5,6 +5,10 @@ default: &default
   password: 
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
+test:
+  <<: *default
+  database: <%= ENV["DB_TEST"] %>
+  
 development:
   <<: *default
   database: <%= ENV["DB_DEV"] %>
