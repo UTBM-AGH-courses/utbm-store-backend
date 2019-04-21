@@ -5,15 +5,15 @@ default: &default
   username: postgres
   password: 
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
+  
 development:
   <<: *default
-  database: db_development
+  database: <%= ENV["DB_DEV"] %>
 
 test:
   <<: *default
-  database: db_test
+  database: <%= ENV["DB_TEST"] %>
 
 production:
   <<: *default
-  database: db_production
+  database: <%= ENV["DB_PROD"] %>
