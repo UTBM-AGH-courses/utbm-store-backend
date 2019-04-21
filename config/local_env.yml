@@ -1,0 +1,3 @@
+DB_DEV: 'db_development'
+DB_TEST: 'db_test'
+DB_PROD: 'db_production'
