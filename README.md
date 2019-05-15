@@ -4,7 +4,7 @@
 # Store developped with Ruby on Rails (banckend side)
 
 UTBM project (UV LP71).
-[Frontend side](https://github.com/vareversat/UTBM-Web-Project-frontend)
+[Frontend side](https://github.com/vareversat/kebab_store-frontend)
 
 # Prerequisites
 
@@ -14,7 +14,7 @@ UTBM project (UV LP71).
 # Build and launch
 
 ```shell
-$ cd UTBM-Web-Project/
+$ cd kebab_store-backend/
 $ ./init.sh
 ```
 Then, go to `http://localhost:3000/` on your web browser
